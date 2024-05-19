@@ -22,6 +22,32 @@ public class HomePage {
 	@FindBy(xpath = "//p[contains(text(),'The product has been added')]")
 	private WebElement productAddedMsg;
 	
+	@FindBy(partialLinkText = "BOOKS")
+	private WebElement booksLink;
+	
+	@FindBy(partialLinkText = "ELECTRONICS")
+	private WebElement electronicsLink;
+	
+	@FindBy(partialLinkText = "COMPUTERS")
+	private WebElement computersLink;
+	
+	public WebElement getbooksLink()
+	{
+		return booksLink;
+	}
+	
+	
+	
+	public WebElement getcomputersLink()
+	{
+		return computersLink;
+	}
+	
+	
+	public WebElement getelectronicsLink()
+	{
+		return electronicsLink;
+	}
 	public WebElement getProductAddedMsg()
 	{
 		return productAddedMsg;
