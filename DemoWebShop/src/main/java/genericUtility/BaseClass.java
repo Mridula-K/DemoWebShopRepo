@@ -55,7 +55,7 @@ public class BaseClass {
 	@BeforeTest
 	public void objectCreation() throws IOException {
 		fLib = new FileUtility();
-//		eLib = new ExcelUtility();
+    	eLib = new ExcelUtility();
 	}
 
 	@Parameters("Browser")

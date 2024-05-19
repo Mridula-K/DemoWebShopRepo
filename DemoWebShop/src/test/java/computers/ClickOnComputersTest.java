@@ -14,7 +14,7 @@ public class ClickOnComputersTest extends BaseClass {
 	public void clickOnComputers() throws FileNotFoundException
 	{
 		hp.getcomputersLink().click();
-		String expectedTitleComp = eLib.getDataFromExcel("Computer", 1,0 );
+		String expectedTitleComp = eLib.getDataFromExcel("Computers", 1,0 );
 		Assert.assertEquals(driver.getTitle(),expectedTitleComp, "Computers Page not displayed");
 		test.log(Status.PASS, "Computers Page Displayed Successfully");
 	}
