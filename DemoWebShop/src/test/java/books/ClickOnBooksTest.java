@@ -12,7 +12,7 @@ import genericUtility.BaseClass;
 import genericUtility.ListenerUtility;
 
 @Listeners(ListenerUtility.class)
-public class ClickOnBooks extends BaseClass{
+public class ClickOnBooksTest extends BaseClass{
 @Test
 public void clickOnBooks() throws FileNotFoundException
 {
