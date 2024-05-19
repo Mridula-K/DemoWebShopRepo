@@ -3,12 +3,15 @@ package computers;
 import java.io.FileNotFoundException;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
 import genericUtility.BaseClass;
+import genericUtility.ListenerUtility;
 
+@Listeners(ListenerUtility.class)
 public class ClickOnComputersTest extends BaseClass {
 	@Test
 	public void clickOnComputers() throws FileNotFoundException
