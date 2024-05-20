@@ -5,13 +5,13 @@
     <classes>
       <class name="computers.ClickOnComputersTest">
         <methods>
-          <include name="reportConfig"/>
           <include name="reportBackUp"/>
+          <include name="reportConfig"/>
           <include name="clickOnComputers"/>
           <include name="login"/>
           <include name="openBrowser"/>
-          <include name="closeBrowser"/>
           <include name="objectCreation"/>
+          <include name="closeBrowser"/>
           <include name="logout"/>
         </methods>
       </class> <!-- computers.ClickOnComputersTest -->

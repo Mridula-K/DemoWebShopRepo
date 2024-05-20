@@ -1,118 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="13" passed="1" failed="0" skipped="3">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-20T08:08:53 IST" name="Suite" finished-at="2024-05-20T08:09:11 IST" duration-ms="17888">
+  <suite started-at="2024-05-20T14:35:24 IST" name="Default suite" finished-at="2024-05-20T14:36:05 IST" duration-ms="40758">
     <groups>
     </groups>
-    <test started-at="2024-05-20T08:08:53 IST" name="Test" finished-at="2024-05-20T08:09:11 IST" duration-ms="17888">
+    <test started-at="2024-05-20T14:35:24 IST" name="Default test" finished-at="2024-05-20T14:36:05 IST" duration-ms="40758">
       <class name="computers.ClickOnComputersTest">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:computers.ClickOnComputersTest@7586beff]" started-at="2024-05-20T08:09:10 IST" name="openBrowser" finished-at="2024-05-20T08:09:11 IST" duration-ms="1200" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "genericUtility.FileUtility.getDataFromFile(String)" because "this.fLib" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "genericUtility.FileUtility.getDataFromFile(String)" because "this.fLib" is null
-at genericUtility.BaseClass.openBrowser(BaseClass.java:74)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login(java.lang.reflect.Method)[pri:0, instance:computers.ClickOnComputersTest@7586beff]" started-at="2024-05-20T08:09:11 IST" name="login" finished-at="2024-05-20T08:09:11 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="clickOnComputers()[pri:0, instance:computers.ClickOnComputersTest@7586beff]" started-at="2024-05-20T08:09:11 IST" name="clickOnComputers" finished-at="2024-05-20T08:09:11 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "genericUtility.FileUtility.getDataFromFile(String)" because "this.fLib" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "genericUtility.FileUtility.getDataFromFile(String)" because "this.fLib" is null
-at genericUtility.BaseClass.openBrowser(BaseClass.java:74)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnComputers -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:computers.ClickOnComputersTest@7586beff]" started-at="2024-05-20T08:09:11 IST" name="logout" finished-at="2024-05-20T08:09:11 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:computers.ClickOnComputersTest@7586beff]" started-at="2024-05-20T08:09:11 IST" name="closeBrowser" finished-at="2024-05-20T08:09:11 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- computers.ClickOnComputersTest -->
-      <class name="shoppingCart.TC_DWS_003_Test">
-        <test-method is-config="true" signature="reportConfig()[pri:0, instance:shoppingCart.TC_DWS_003_Test@702657cc]" started-at="2024-05-20T08:08:53 IST" name="reportConfig" finished-at="2024-05-20T08:08:53 IST" duration-ms="260" status="PASS">
+        <test-method is-config="true" signature="reportConfig()[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:35:24 IST" name="reportConfig" finished-at="2024-05-20T14:35:24 IST" duration-ms="399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportConfig -->
-        <test-method is-config="true" signature="objectCreation()[pri:0, instance:shoppingCart.TC_DWS_003_Test@702657cc]" started-at="2024-05-20T08:08:53 IST" name="objectCreation" finished-at="2024-05-20T08:08:54 IST" duration-ms="680" status="PASS">
+        <test-method is-config="true" signature="objectCreation()[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:35:24 IST" name="objectCreation" finished-at="2024-05-20T14:35:25 IST" duration-ms="711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- objectCreation -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:shoppingCart.TC_DWS_003_Test@702657cc]" started-at="2024-05-20T08:08:54 IST" name="openBrowser" finished-at="2024-05-20T08:08:57 IST" duration-ms="3412" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:35:25 IST" name="openBrowser" finished-at="2024-05-20T14:35:58 IST" duration-ms="33378" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,228 +26,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login(java.lang.reflect.Method)[pri:0, instance:shoppingCart.TC_DWS_003_Test@702657cc]" started-at="2024-05-20T08:08:57 IST" name="login" finished-at="2024-05-20T08:09:01 IST" duration-ms="4112" status="PASS">
+        <test-method is-config="true" signature="login(java.lang.reflect.Method)[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:35:58 IST" name="login" finished-at="2024-05-20T14:36:02 IST" duration-ms="3128" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void shoppingCart.TC_DWS_003_Test.addProduct()]]>
+                <![CDATA[public void computers.ClickOnComputersTest.clickOnComputers() throws java.io.FileNotFoundException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="addProduct()[pri:0, instance:shoppingCart.TC_DWS_003_Test@702657cc]" started-at="2024-05-20T08:09:01 IST" name="addProduct" finished-at="2024-05-20T08:09:06 IST" duration-ms="4910" status="PASS">
+        <test-method signature="clickOnComputers()[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:36:02 IST" name="clickOnComputers" finished-at="2024-05-20T14:36:03 IST" duration-ms="1306" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addProduct -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:shoppingCart.TC_DWS_003_Test@702657cc]" started-at="2024-05-20T08:09:06 IST" name="logout" finished-at="2024-05-20T08:09:07 IST" duration-ms="881" status="PASS">
+        </test-method> <!-- clickOnComputers -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:36:03 IST" name="logout" finished-at="2024-05-20T14:36:05 IST" duration-ms="1943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:shoppingCart.TC_DWS_003_Test@702657cc]" started-at="2024-05-20T08:09:07 IST" name="closeBrowser" finished-at="2024-05-20T08:09:08 IST" duration-ms="318" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:36:05 IST" name="closeBrowser" finished-at="2024-05-20T14:36:05 IST" duration-ms="243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="reportBackUp()[pri:0, instance:shoppingCart.TC_DWS_003_Test@702657cc]" started-at="2024-05-20T08:09:11 IST" name="reportBackUp" finished-at="2024-05-20T08:09:12 IST" duration-ms="1052" status="PASS">
+        <test-method is-config="true" signature="reportBackUp()[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:36:05 IST" name="reportBackUp" finished-at="2024-05-20T14:36:06 IST" duration-ms="730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportBackUp -->
-      </class> <!-- shoppingCart.TC_DWS_003_Test -->
-      <class name="electronics.ClickOnElectronicsTest">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:electronics.ClickOnElectronicsTest@4c12331b]" started-at="2024-05-20T08:09:09 IST" name="openBrowser" finished-at="2024-05-20T08:09:10 IST" duration-ms="1169" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "genericUtility.FileUtility.getDataFromFile(String)" because "this.fLib" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "genericUtility.FileUtility.getDataFromFile(String)" because "this.fLib" is null
-at genericUtility.BaseClass.openBrowser(BaseClass.java:74)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="clickOnBooks()[pri:0, instance:electronics.ClickOnElectronicsTest@4c12331b]" started-at="2024-05-20T08:09:10 IST" name="clickOnBooks" finished-at="2024-05-20T08:09:10 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "genericUtility.FileUtility.getDataFromFile(String)" because "this.fLib" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "genericUtility.FileUtility.getDataFromFile(String)" because "this.fLib" is null
-at genericUtility.BaseClass.openBrowser(BaseClass.java:74)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnBooks -->
-        <test-method is-config="true" signature="login(java.lang.reflect.Method)[pri:0, instance:electronics.ClickOnElectronicsTest@4c12331b]" started-at="2024-05-20T08:09:10 IST" name="login" finished-at="2024-05-20T08:09:10 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:electronics.ClickOnElectronicsTest@4c12331b]" started-at="2024-05-20T08:09:10 IST" name="logout" finished-at="2024-05-20T08:09:10 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:electronics.ClickOnElectronicsTest@4c12331b]" started-at="2024-05-20T08:09:10 IST" name="closeBrowser" finished-at="2024-05-20T08:09:10 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- electronics.ClickOnElectronicsTest -->
-      <class name="books.ClickOnBooksTest">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:books.ClickOnBooksTest@1165b38]" started-at="2024-05-20T08:09:08 IST" name="openBrowser" finished-at="2024-05-20T08:09:09 IST" duration-ms="1105" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "genericUtility.FileUtility.getDataFromFile(String)" because "this.fLib" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "genericUtility.FileUtility.getDataFromFile(String)" because "this.fLib" is null
-at genericUtility.BaseClass.openBrowser(BaseClass.java:74)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login(java.lang.reflect.Method)[pri:0, instance:books.ClickOnBooksTest@1165b38]" started-at="2024-05-20T08:09:09 IST" name="login" finished-at="2024-05-20T08:09:09 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="clickOnBooks()[pri:0, instance:books.ClickOnBooksTest@1165b38]" started-at="2024-05-20T08:09:09 IST" name="clickOnBooks" finished-at="2024-05-20T08:09:09 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "genericUtility.FileUtility.getDataFromFile(String)" because "this.fLib" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "genericUtility.FileUtility.getDataFromFile(String)" because "this.fLib" is null
-at genericUtility.BaseClass.openBrowser(BaseClass.java:74)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnBooks -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:books.ClickOnBooksTest@1165b38]" started-at="2024-05-20T08:09:09 IST" name="logout" finished-at="2024-05-20T08:09:09 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:books.ClickOnBooksTest@1165b38]" started-at="2024-05-20T08:09:09 IST" name="closeBrowser" finished-at="2024-05-20T08:09:09 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- books.ClickOnBooksTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- computers.ClickOnComputersTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

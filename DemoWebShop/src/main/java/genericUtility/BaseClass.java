@@ -52,16 +52,10 @@ public class BaseClass {
 
 	}
 
-	@BeforeTest
-	public void objectCreation() throws IOException {
-		fLib = new FileUtility();
-    	eLib = new ExcelUtility();
-	}
-
 	@Parameters("Browser")
 
 	@BeforeClass
-	public void openBrowser(@Optional("chrome") String browserName) {
+	public void openBrowser(@Optional("chrome") String browserName) throws IOException {
 		if (browserName.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 		} else if (browserName.equalsIgnoreCase("edge")) {
@@ -71,6 +65,8 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		fLib = new FileUtility();
+		eLib = new ExcelUtility();
 	    String URL = fLib.getDataFromFile("url");
 	    driver.get(URL);
 		wp = new WelcomePage(driver);
