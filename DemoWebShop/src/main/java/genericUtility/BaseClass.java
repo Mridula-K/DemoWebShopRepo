@@ -43,7 +43,7 @@ public class BaseClass {
 	public LoginPage lp;
 	public HomePage hp;
 
-	@BeforeSuite
+	@BeforeSuite(alwaysRun = true)
 	public void reportConfig() {
 		String time = jLib.getSystemTime();
 		ExtentSparkReporter spark = new ExtentSparkReporter("./HTML_Reports/ExtentReport_" + time + ".html");
@@ -54,7 +54,7 @@ public class BaseClass {
 
 	@Parameters("Browser")
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void openBrowser(@Optional("chrome") String browserName) throws IOException {
 		if (browserName.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
@@ -75,7 +75,7 @@ public class BaseClass {
 		
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void login(Method method) throws EncryptedDocumentException, IOException {
 		test = extReports.createTest(method.getName());
 		wp.getLoginLink().click();
@@ -92,18 +92,18 @@ public class BaseClass {
 		test.log(Status.PASS, "Home page is displayed");
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void logout() {
 		hp.getLogoutLink().click();
 		test.log(Status.INFO, "User logged out");
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void closeBrowser() {
 		driver.quit();
 	}
 
-	@AfterSuite
+	@AfterSuite(alwaysRun = true)
 	public void reportBackUp() {
 		extReports.flush();
 	}
