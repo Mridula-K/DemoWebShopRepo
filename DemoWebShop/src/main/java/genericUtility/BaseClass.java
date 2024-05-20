@@ -78,9 +78,9 @@ public class BaseClass {
 		
 	}
 
-//	@BeforeMethod(alwaysRun = true)
-//	public void login(Method method) throws EncryptedDocumentException, IOException {
-//		test = extReports.createTest(method.getName());
+	@BeforeMethod(alwaysRun = true)
+	public void login(Method method) throws EncryptedDocumentException, IOException {
+		test = extReports.createTest(method.getName());
 //		wp.getLoginLink().click();
 //		
 //		String EMAIL = fLib.getDataFromFile("email");
@@ -92,8 +92,9 @@ public class BaseClass {
 //		String expectedTitle = eLib.getDataFromExcel("Login", 1, 2);
 //		Assert.assertEquals(driver.getTitle(), expectedTitle, "Home page is not displayed");
 //		Assert.assertEquals(hp.getLogoutLink().isDisplayed(), true, "Home Page is not displayed");
-//		test.log(Status.PASS, "Home page is displayed");
-//	}
+//	test.log(Status.PASS, "Home page is displayed");
+		test.log(Status.PASS,"Register Successfully");
+ }
 
 //	@AfterMethod(alwaysRun = true)
 //	public void logout() {

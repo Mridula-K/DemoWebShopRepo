@@ -2,20 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-20T14:35:24 IST" name="Default suite" finished-at="2024-05-20T14:36:05 IST" duration-ms="40758">
+  <suite started-at="2024-05-20T23:16:35 IST" name="Default suite" finished-at="2024-05-20T23:16:44 IST" duration-ms="9231">
     <groups>
     </groups>
-    <test started-at="2024-05-20T14:35:24 IST" name="Default test" finished-at="2024-05-20T14:36:05 IST" duration-ms="40758">
-      <class name="computers.ClickOnComputersTest">
-        <test-method is-config="true" signature="reportConfig()[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:35:24 IST" name="reportConfig" finished-at="2024-05-20T14:35:24 IST" duration-ms="399" status="PASS">
+    <test started-at="2024-05-20T23:16:35 IST" name="Default test" finished-at="2024-05-20T23:16:44 IST" duration-ms="9231">
+      <class name="register.RegisterTest">
+        <test-method is-config="true" signature="reportConfig()[pri:0, instance:register.RegisterTest@33d512c1]" started-at="2024-05-20T23:16:35 IST" name="reportConfig" finished-at="2024-05-20T23:16:35 IST" duration-ms="237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportConfig -->
-        <test-method is-config="true" signature="objectCreation()[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:35:24 IST" name="objectCreation" finished-at="2024-05-20T14:35:25 IST" duration-ms="711" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- objectCreation -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:35:25 IST" name="openBrowser" finished-at="2024-05-20T14:35:58 IST" duration-ms="33378" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:register.RegisterTest@33d512c1]" started-at="2024-05-20T23:16:35 IST" name="openBrowser" finished-at="2024-05-20T23:16:42 IST" duration-ms="7024" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,34 +22,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login(java.lang.reflect.Method)[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:35:58 IST" name="login" finished-at="2024-05-20T14:36:02 IST" duration-ms="3128" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void computers.ClickOnComputersTest.clickOnComputers() throws java.io.FileNotFoundException]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="register()[pri:0, instance:register.RegisterTest@33d512c1]" started-at="2024-05-20T23:16:42 IST" name="register" finished-at="2024-05-20T23:16:44 IST" duration-ms="1976" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="clickOnComputers()[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:36:02 IST" name="clickOnComputers" finished-at="2024-05-20T14:36:03 IST" duration-ms="1306" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnComputers -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:36:03 IST" name="logout" finished-at="2024-05-20T14:36:05 IST" duration-ms="1943" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:36:05 IST" name="closeBrowser" finished-at="2024-05-20T14:36:05 IST" duration-ms="243" status="PASS">
+        </test-method> <!-- register -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:register.RegisterTest@33d512c1]" started-at="2024-05-20T23:16:44 IST" name="closeBrowser" finished-at="2024-05-20T23:16:44 IST" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="reportBackUp()[pri:0, instance:computers.ClickOnComputersTest@34e9fd99]" started-at="2024-05-20T14:36:05 IST" name="reportBackUp" finished-at="2024-05-20T14:36:06 IST" duration-ms="730" status="PASS">
+        <test-method is-config="true" signature="reportBackUp()[pri:0, instance:register.RegisterTest@33d512c1]" started-at="2024-05-20T23:16:44 IST" name="reportBackUp" finished-at="2024-05-20T23:16:45 IST" duration-ms="536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportBackUp -->
-      </class> <!-- computers.ClickOnComputersTest -->
+      </class> <!-- register.RegisterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
