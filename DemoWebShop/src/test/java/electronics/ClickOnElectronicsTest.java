@@ -14,7 +14,7 @@ import genericUtility.ListenerUtility;
 @Listeners(ListenerUtility.class)
 public class ClickOnElectronicsTest extends BaseClass {
 	@Test
-	public void clickOnBooks() throws FileNotFoundException
+	public void clickOnElectronics() throws FileNotFoundException
 	{
 		hp.getelectronicsLink().click();
 		String expectedTitleElectonics = eLib.getDataFromExcel("Electronics", 1,0 );
