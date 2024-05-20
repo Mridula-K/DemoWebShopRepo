@@ -27,6 +27,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import objectRepository.HomePage;
 import objectRepository.LoginPage;
+import objectRepository.RegisterPage;
 import objectRepository.WelcomePage;
 
 public class BaseClass {
@@ -42,6 +43,7 @@ public class BaseClass {
 	public WelcomePage wp;
 	public LoginPage lp;
 	public HomePage hp;
+	public RegisterPage rp;
 
 	@BeforeSuite(alwaysRun = true)
 	public void reportConfig() {
@@ -72,31 +74,32 @@ public class BaseClass {
 		wp = new WelcomePage(driver);
 		hp = new HomePage(driver);
 		lp=new LoginPage(driver);
+		rp=new RegisterPage(driver);
 		
 	}
 
-	@BeforeMethod(alwaysRun = true)
-	public void login(Method method) throws EncryptedDocumentException, IOException {
-		test = extReports.createTest(method.getName());
-		wp.getLoginLink().click();
-		
-		String EMAIL = fLib.getDataFromFile("email");
-		String PASSWORD = fLib.getDataFromFile("password");
-		lp.getEmailTF().sendKeys(EMAIL);
-		lp.getPwdTF().sendKeys(PASSWORD);
-		lp.getLoginBtn().click();
-		eLib=new ExcelUtility();
-		String expectedTitle = eLib.getDataFromExcel("Login", 1, 2);
-		Assert.assertEquals(driver.getTitle(), expectedTitle, "Home page is not displayed");
-		Assert.assertEquals(hp.getLogoutLink().isDisplayed(), true, "Home Page is not displayed");
-		test.log(Status.PASS, "Home page is displayed");
-	}
+//	@BeforeMethod(alwaysRun = true)
+//	public void login(Method method) throws EncryptedDocumentException, IOException {
+//		test = extReports.createTest(method.getName());
+//		wp.getLoginLink().click();
+//		
+//		String EMAIL = fLib.getDataFromFile("email");
+//		String PASSWORD = fLib.getDataFromFile("password");
+//		lp.getEmailTF().sendKeys(EMAIL);
+//		lp.getPwdTF().sendKeys(PASSWORD);
+//		lp.getLoginBtn().click();
+//		eLib=new ExcelUtility();
+//		String expectedTitle = eLib.getDataFromExcel("Login", 1, 2);
+//		Assert.assertEquals(driver.getTitle(), expectedTitle, "Home page is not displayed");
+//		Assert.assertEquals(hp.getLogoutLink().isDisplayed(), true, "Home Page is not displayed");
+//		test.log(Status.PASS, "Home page is displayed");
+//	}
 
-	@AfterMethod(alwaysRun = true)
-	public void logout() {
-		hp.getLogoutLink().click();
-		test.log(Status.INFO, "User logged out");
-	}
+//	@AfterMethod(alwaysRun = true)
+//	public void logout() {
+//		hp.getLogoutLink().click();
+//		test.log(Status.INFO, "User logged out");
+//	}
 
 	@AfterClass(alwaysRun = true)
 	public void closeBrowser() {

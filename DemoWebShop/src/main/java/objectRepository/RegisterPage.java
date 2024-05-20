@@ -37,42 +37,42 @@ private WebElement confirmPwdTF;
 @FindBy(id = "register-button")
 private WebElement registerBtn;
 
-public WebElement maleRB()
+public WebElement getMaleRB()
 {
 	return maleRadioBtn;
 }
 
- public WebElement femaleRB()
+ public WebElement getFemaleRB()
  {
 	 return femaleRadioBtn;
  }
  
- public WebElement firstNameTF()
+ public WebElement getFirstNameTF()
  {
 	 return firstNameTF;
  }
  
- public WebElement lastNameTF()
+ public WebElement getLastNameTF()
  {
 	 return lastNameTF;
  }
  
- public WebElement emailTF()
+ public WebElement getEmailTF()
  {
 	return emailTF;	 
  }
  
- public WebElement pwdTF()
+ public WebElement getPwdTF()
  {
 	 return pwdTF;
  }
  
- public WebElement confirmPwdTF()
+ public WebElement getConfirmPwdTF()
  {
 	 return confirmPwdTF;
  }
  
- public WebElement registerBtn()
+ public WebElement getRegisterBtn()
  {
 	 return registerBtn;
  }
