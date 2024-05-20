@@ -56,6 +56,9 @@ public class BaseClass {
 	public void objectCreation() throws IOException {
 		fLib = new FileUtility();
     	eLib = new ExcelUtility();
+    	wp = new WelcomePage(driver);
+		hp = new HomePage(driver);
+		lp=new LoginPage(driver);
 	}
 
 	@Parameters("Browser")
@@ -74,9 +77,7 @@ public class BaseClass {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		String URL = fLib.getDataFromFile("url");
 		driver.get(URL);
-		wp = new WelcomePage(driver);
-		hp = new HomePage(driver);
-		lp=new LoginPage(driver);
+		
 	}
 
 	@BeforeMethod
