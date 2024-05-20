@@ -71,8 +71,8 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-	     driver.get("https://demowebshop.tricentis.com/");
-	
+	    String URL = fLib.getDataFromFile("url");
+	    driver.get(URL);
 		wp = new WelcomePage(driver);
 		hp = new HomePage(driver);
 		lp=new LoginPage(driver);

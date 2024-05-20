@@ -8,11 +8,44 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,390</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num attn">3</td><td class="num">0</td><td class="num">0</td><td class="num">17,888</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">electronics.ClickOnElectronicsTest</td><td><a href="#m0">clickOnBooks</a></td><td rowspan="1">1716172292653</td><td rowspan="1">782</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">books.ClickOnBooksTest</td><td><a href="#m0">openBrowser</a></td><td rowspan="1">1716172748034</td><td rowspan="1">1105</td></tr><tr class="failedodd"><td rowspan="1">computers.ClickOnComputersTest</td><td><a href="#m1">openBrowser</a></td><td rowspan="1">1716172750351</td><td rowspan="1">1200</td></tr><tr class="failedeven"><td rowspan="1">electronics.ClickOnElectronicsTest</td><td><a href="#m2">openBrowser</a></td><td rowspan="1">1716172749160</td><td rowspan="1">1169</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">books.ClickOnBooksTest</td><td><a href="#m3">closeBrowser</a></td><td rowspan="1">1716172749147</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">login</a></td><td rowspan="1">1716172749144</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">logout</a></td><td rowspan="1">1716172749147</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="3">computers.ClickOnComputersTest</td><td><a href="#m6">closeBrowser</a></td><td rowspan="1">1716172751564</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m7">login</a></td><td rowspan="1">1716172751556</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m8">logout</a></td><td rowspan="1">1716172751564</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="3">electronics.ClickOnElectronicsTest</td><td><a href="#m9">closeBrowser</a></td><td rowspan="1">1716172750347</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m10">login</a></td><td rowspan="1">1716172750334</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m11">logout</a></td><td rowspan="1">1716172750341</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">books.ClickOnBooksTest</td><td><a href="#m12">clickOnBooks</a></td><td rowspan="1">1716172749147</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">computers.ClickOnComputersTest</td><td><a href="#m13">clickOnComputers</a></td><td rowspan="1">1716172751559</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">electronics.ClickOnElectronicsTest</td><td><a href="#m14">clickOnBooks</a></td><td rowspan="1">1716172750334</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">shoppingCart.TC_DWS_003_Test</td><td><a href="#m15">addProduct</a></td><td rowspan="1">1716172741919</td><td rowspan="1">4910</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">electronics.ClickOnElectronicsTest#clickOnBooks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">books.ClickOnBooksTest#openBrowser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;genericUtility.FileUtility.getDataFromFile(String)&quot; because &quot;this.fLib&quot; is null
+	at genericUtility.BaseClass.openBrowser(BaseClass.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">computers.ClickOnComputersTest#openBrowser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;genericUtility.FileUtility.getDataFromFile(String)&quot; because &quot;this.fLib&quot; is null
+	at genericUtility.BaseClass.openBrowser(BaseClass.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">electronics.ClickOnElectronicsTest#openBrowser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;genericUtility.FileUtility.getDataFromFile(String)&quot; because &quot;this.fLib&quot; is null
+	at genericUtility.BaseClass.openBrowser(BaseClass.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">books.ClickOnBooksTest#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">books.ClickOnBooksTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">books.ClickOnBooksTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">computers.ClickOnComputersTest#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">computers.ClickOnComputersTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">computers.ClickOnComputersTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">electronics.ClickOnElectronicsTest#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">electronics.ClickOnElectronicsTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">electronics.ClickOnElectronicsTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">books.ClickOnBooksTest#clickOnBooks</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;genericUtility.FileUtility.getDataFromFile(String)&quot; because &quot;this.fLib&quot; is null
+	at genericUtility.BaseClass.openBrowser(BaseClass.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">computers.ClickOnComputersTest#clickOnComputers</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;genericUtility.FileUtility.getDataFromFile(String)&quot; because &quot;this.fLib&quot; is null
+	at genericUtility.BaseClass.openBrowser(BaseClass.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">electronics.ClickOnElectronicsTest#clickOnBooks</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;genericUtility.FileUtility.getDataFromFile(String)&quot; because &quot;this.fLib&quot; is null
+	at genericUtility.BaseClass.openBrowser(BaseClass.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">shoppingCart.TC_DWS_003_Test#addProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
