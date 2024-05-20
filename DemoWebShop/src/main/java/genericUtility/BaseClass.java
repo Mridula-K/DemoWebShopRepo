@@ -56,9 +56,6 @@ public class BaseClass {
 	public void objectCreation() throws IOException {
 		fLib = new FileUtility();
     	eLib = new ExcelUtility();
-    	wp = new WelcomePage(driver);
-		hp = new HomePage(driver);
-		lp=new LoginPage(driver);
 	}
 
 	@Parameters("Browser")
@@ -73,10 +70,12 @@ public class BaseClass {
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-
 		wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-		String URL = fLib.getDataFromFile("url");
-		driver.get(URL);
+	     driver.get("https://demowebshop.tricentis.com/");
+	
+		wp = new WelcomePage(driver);
+		hp = new HomePage(driver);
+		lp=new LoginPage(driver);
 		
 	}
 
