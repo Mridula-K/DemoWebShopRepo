@@ -3,18 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="computers.ClickOnComputersTest">
+      <class name="shoppingCart.TC_DWS_004_Test">
         <methods>
-          <include name="reportBackUp"/>
+          <include name="removeProduct"/>
           <include name="reportConfig"/>
-          <include name="clickOnComputers"/>
+          <include name="reportBackUp"/>
           <include name="login"/>
           <include name="openBrowser"/>
-          <include name="objectCreation"/>
           <include name="closeBrowser"/>
           <include name="logout"/>
         </methods>
-      </class> <!-- computers.ClickOnComputersTest -->
+      </class> <!-- shoppingCart.TC_DWS_004_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

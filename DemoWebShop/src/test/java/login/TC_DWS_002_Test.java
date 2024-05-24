@@ -10,7 +10,7 @@ import com.aventstack.extentreports.Status;
 
 import genericUtility.BaseClass;
 
-public class LoginTest extends BaseClass{
+public class TC_DWS_002_Test extends BaseClass{
 @Test
 public void login()
 {

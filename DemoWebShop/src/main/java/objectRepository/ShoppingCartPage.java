@@ -12,8 +12,7 @@ public class ShoppingCartPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(linkText = "14.1-inch Laptop")
-	private WebElement productName;
+	
 	
 	@FindBy(xpath = "//h1[text()='Shopping cart']")
 	private WebElement shoppingCartText;
@@ -25,17 +24,14 @@ public class ShoppingCartPage {
 	private WebElement updateCartBtn;
 	
 	@FindBy(xpath = "//div[@class='order-summary-content']")
-	private WebElement shoppingCartMsg;
+	private WebElement shoppingCartEmptyMsg;
 	
-	public WebElement getShoppingCartMsg()
+
+	public WebElement getShoppingCartEmptyMsg()
 	{
-		return shoppingCartMsg;
+		return shoppingCartEmptyMsg;
 	}
 	
-	public WebElement getProductName()
-	{
-	return productName;	
-	}
 	
 	public WebElement getShoppingCartText()
 	{

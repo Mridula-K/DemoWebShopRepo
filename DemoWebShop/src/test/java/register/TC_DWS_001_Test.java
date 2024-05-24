@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import genericUtility.BaseClass;
 
-public class RegisterTest extends BaseClass {
+public class TC_DWS_001_Test extends BaseClass {
 	@Test
 	public void register() {
 		wp.getRegisterLink().click();

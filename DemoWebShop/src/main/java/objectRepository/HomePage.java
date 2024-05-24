@@ -31,9 +31,18 @@ public class HomePage {
 	@FindBy(partialLinkText = "COMPUTERS")
 	private WebElement computersLink;
 	
+	@FindBy(linkText = "Shopping cart")
+	private WebElement shoppingCartLink;
+	
 	public WebElement getbooksLink()
 	{
 		return booksLink;
+	}
+	
+	
+	public WebElement getShoppingCartLink()
+	{
+		return shoppingCartLink;
 	}
 	
 	
