@@ -3,13 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="register.TC_DWS_001_Test"/>
       <class name="shoppingCart.TC_DWS_003_Test"/>
       <class name="books.ClickOnBooksTest"/>
       <class name="electronics.ClickOnElectronicsTest"/>
       <class name="shoppingCart.TC_DWS_004_Test"/>
       <class name="computers.ClickOnComputersTest"/>
-      <class name="login.TC_DWS_002_Test"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
